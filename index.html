@@ -3,9 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
 	<title>Document</title>
 </head>
 <body>
-	
+	<header class="header">
+		<div class="header__top">
+			<div class="header__wrapper">
+				<div class="header__logo">
+					<img src="./images/header__logo.svg" alt="">
+				</div>
+				<div class="header__search">
+					<form action="#">
+						<button type="submit">
+							<img src="./images/header__search-btn.svg" alt="">
+						</button>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<button class="header__number">+380 630 130 103</button>
+				<div class="header__burger-menu">
+					<img src="./images/header__burger-menu.png" alt="">
+				</div>
+	 		</div>
+		</div>
+ 		<div class="header__bottom">
+ 			<div class="header__wrapper">
+ 				<ul>
+ 					<li><a href="##">Наборы</a></li>
+ 					<li><a href="#">Все товары</a></li>
+ 					<li><a href="##">Пошив</a></li>
+ 					<li><a href="##">Производство</a></li>
+ 					<li><a href="##">Информация</a></li>
+ 				</ul>
+ 				<div class="header__banner">
+ 					<div class="header__banner__title">ШОПЕРЫ СО СКИДКОЙ -25%</div>
+ 					<img class="header__banner__img" src="./images/header__banner.png" alt="">
+ 				</div>
+ 			</div>
+ 		</div>
+	</header>
+	<script>
+		document.addEventListener('click',(e)=>{
+			document.querySelector('.header__search').removeAttribute('active','')
+		})
+		document.querySelector('.header__search').addEventListener('click',(e)=>{
+			e.stopPropagation()
+			document.querySelector('.header__search').setAttribute('active','')
+		})
+
+		const curPage = document.URL;
+         const links = document.getElementsByTagName('a');
+         for (let link of links) {
+           if (link.href == curPage) {
+             link.setAttribute("current",'');
+           }
+         }
+	</script>
 </body>
 </html>
