@@ -139,7 +139,7 @@ text-decoration: none;
 	border-radius: 6px;
 	position: absolute;
 	flex-direction: column;
-	top: -200%;
+	top: -500px;
 	opacity: 0;
 	left: 50%;
 	padding-top: 20px;
