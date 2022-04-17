@@ -88,6 +88,8 @@ body {
 	color: #272525;
 }
 .prescreen__preferences {
+	z-index: 0;
+	position: relative;
 	display: flex;
 	align-items: center;
 }
@@ -224,7 +226,7 @@ max-width: 200px;
 	}
 	.prescreen__preferences{
 		position: absolute;
-		z-index: 100010;
+		z-index: 0;
 		align-items: flex-start;
 		flex-direction: column;
 	}
