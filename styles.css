@@ -222,7 +222,7 @@ max-width: 200px;
 	.prescreen__back-image{
 		transform: rotateY(180deg) scale(0.8);
 	    right: -366px;
-	    top: 343px;
+        top: 274px;
 	}
 	.prescreen__preferences{
 		position: absolute;
@@ -278,8 +278,8 @@ max-width: 200px;
 	}
 	.prescreen__back-image{
 		transform: rotateY(180deg) scale(0.8);
-	    right: -504px;
-	    top: 341px;
+        right: -504px;
+		top: 234px;
 	}
 	.prescreen__preferences{
 	    margin-left: -33px;

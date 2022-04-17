@@ -70,6 +70,8 @@
 	text-align: center;
 
 	color: #272525;
+	transition: 0.2s;
+	padding: 0 25px;
 	text-decoration: none;
 	margin: 1	px;
 }
