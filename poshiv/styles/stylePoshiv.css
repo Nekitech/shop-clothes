@@ -12,7 +12,7 @@ body {
 }
 .prescreen {
     width: 100vw;
-    height: 100vh;
+    height: 1133px;
     background-image: url(../image/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,10 +68,16 @@ body {
     border: 0;
     cursor: pointer;
 }
+.prescreen__button:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #3C336C;
+}
 .prescreen__descr {
     color: #3C336C;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
     margin-left: 69px;
+}
+.main {
+    height: 1000px;
 }
