@@ -8,135 +8,132 @@
     <title>Poshiv</title>
 </head>
 <body>
-    <header class="header">
-        <link rel="stylesheet" href="styles/stylePoshiv.css">
-        <div class="header__top">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <img src="../template/template__images/header__logo.svg" alt="">
-                </div>
-                <div class="header__search">
-                    <form action="#">
-                        <button type="submit">
-                            <img src="../template/template__images/header__search-btn.svg" alt="">
-                        </button>
-                        <input type="text" placeholder="Поиск">
-                    </form>
-                </div>
-                <button class="header__number">+380 630 130 103</button>
-                <div class="header__burger-menu">
-                    <img src="../template/template__images/header__burger-menu.png" alt="">
-                </div>
-             </div>
-        </div>
-         <div class="header__bottom">
-             <div class="header__wrapper">
-                 <ul>
-                     <li><a href="##">Наборы</a></li>
-                     <li><a href="#">Все товары</a></li>
-                     <li><a href="##">Пошив</a></li>
-                     <li><a href="##">Производство</a></li>
-                     <li><a href="##">Информация</a></li>
-                 </ul>
-                 <div class="header__banner">
-                     <div class="header__banner__title">ШОПЕРЫ СО СКИДКОЙ -25%</div>
-                     <img class="header__banner__img" src="../template/template__images/header__banner.png" alt="">
-                 </div>	
-             </div>
-         </div>
-         <div class="header__popup-menu">
-             <div class="header__popup-menu__close-btn-holder">
-                 <img class="header__popup-menu__close-btn" style="vertical-align: top;" src="../template/template__images/header__close.svg" alt="">
-             </div>
-             <a href="#">Пошив</a>
-             <a href="#">Все товары</a>
-             <ul>
-                 <li><a href="#">Толстовки</a></li>
-                 <li><a href="#">Свитшоты</a></li>
-                 <li><a href="#">Футболки</a></li>
-                 <li><a href="#">Поло</a></li>
-                 <li><a href="#">Жилетки</a></li>
-                 <li><a href="#">Рюкзаки</a></li>
-                 <li><a href="#">Бананки</a></li>
-                 <li><a href="#">Эко-сумки/<br>Шоперы</a></li>
-                 <li><a href="#">Пледы</a></li>
-                 <li><a href="#">Носки</a></li>
-                 <li><a href="#">Маски</a></li>
-             </ul>
-             <a href="#">Наборы</a>
-             <a href="#">Производство</a>
-             <a href="#">Информация</a>
-             <div class="header__popup-menu__mail">
-                 <a href="#">example@gmail.com</a>
-             </div>
-             <button class="header__number">+380 630 130 103</button>
-             <div class="header__popup-menu__links">
-                 <a href="#">
-                     <img class="fix-img" src="../template/template__images/header__facebook.png" alt="">
-                 </a>
-                 <a href="#">
-                     <img class="fix-img" src="../template/template__images/header__llinkedIn.png" alt="">
-                     
-                 </a>
-             </div>
-         </div>
-    </header>
-    <script>
-        document.addEventListener('click',(e)=>{
-            document.querySelector('.header__search').removeAttribute('active','')
-            document.querySelector('.header__popup-menu').removeAttribute('active','')
-        })
-        document.querySelector('.header__search').addEventListener('click',(e)=>{
-            e.stopPropagation()
-            document.querySelector('.header__search').setAttribute('active','')
-        })
 
-        document.querySelector('.header__burger-menu').addEventListener('click',(e)=>{
-            e.stopPropagation()
-            document.querySelector('.header__popup-menu').setAttribute('active','')
-        })
-        document.querySelector('.header__popup-menu').addEventListener('click',(e)=>{
-            e.stopPropagation()
-        })
-        document.querySelector('.header__popup-menu__close-btn').addEventListener('click',()=>{
-            
-            document.querySelector('.header__popup-menu').removeAttribute('active','')
-        })
+    <header class="header">
+		<div class="header__top">
+			<div class="header__wrapper">
+				<div class="header__logo">
+					<img src="../template/template__images/header__logo.svg" alt="">
+				</div>
+				<div class="header__search">
+					<form action="#">
+						<button type="submit">
+							<img src="../template/template__images/header__search-btn.svg" alt="">
+						</button>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<button class="header__number">+380 630 130 103</button>
+				<div class="header__burger-menu">
+					<img src="../template/template__images/header__burger-menu.png" alt="">
+				</div>
+	 		</div>
+		</div>
+ 		<div class="header__bottom">
+ 			<div class="header__wrapper">
+ 				<ul>
+ 					<li><a href="##">Наборы</a></li>
+ 					<li><a href="#">Все товары</a></li>
+ 					<li><a href="##">Пошив</a></li>
+ 					<li><a href="##">Производство</a></li>
+ 					<li><a href="##">Информация</a></li>
+ 				</ul>
+ 				<div class="header__banner">
+ 					<div class="header__banner__title">ШОПЕРЫ СО СКИДКОЙ -25%</div>
+ 					<img class="header__banner__img" src="../template/template__images/header__banner.png" alt="">
+ 				</div>	
+ 			</div>
+ 		</div>
+ 		<div class="header__popup-menu">
+ 			<div class="header__popup-menu__close-btn-holder">
+ 				<img class="header__popup-menu__close-btn" style="vertical-align: top;" src="../template/template__images/header__close.svg" alt="">
+ 			</div>
+ 			<a href="#">Пошив</a>
+ 			<a href="#">Все товары</a>
+ 			<ul>
+ 				<li><a href="#">Толстовки</a></li>
+ 				<li><a href="#">Свитшоты</a></li>
+ 				<li><a href="#">Футболки</a></li>
+ 				<li><a href="#">Поло</a></li>
+ 				<li><a href="#">Жилетки</a></li>
+ 				<li><a href="#">Рюкзаки</a></li>
+ 				<li><a href="#">Бананки</a></li>
+ 				<li><a href="#">Эко-сумки/<br>Шоперы</a></li>
+ 				<li><a href="#">Пледы</a></li>
+ 				<li><a href="#">Носки</a></li>
+ 				<li><a href="#">Маски</a></li>
+ 			</ul>
+ 			<a href="#">Наборы</a>
+ 			<a href="#">Производство</a>
+ 			<a href="#">Информация</a>
+ 			<div class="header__popup-menu__mail">
+	 			<a href="#">example@gmail.com</a>
+ 			</div>
+ 			<button class="header__number">+380 630 130 103</button>
+ 			<div class="header__popup-menu__links">
+ 				<a href="#">
+ 					<img class="fix-img" src="../template/template__images/header__facebook.png" alt="">
+ 				</a>
+ 				<a href="#">
+ 					<img class="fix-img" src="../template/template__images/header__llinkedIn.png" alt="">
+ 					
+ 				</a>
+ 			</div>
+ 		</div>
+	</header>
+	<script>
+		document.addEventListener('click',(e)=>{
+			document.querySelector('.header__search').removeAttribute('active','')
+			document.querySelector('.header__popup-menu').removeAttribute('active','')
+		})
+		document.querySelector('.header__search').addEventListener('click',(e)=>{
+			e.stopPropagation()
+			document.querySelector('.header__search').setAttribute('active','')
+		})
+
+		document.querySelector('.header__burger-menu').addEventListener('click',(e)=>{
+			e.stopPropagation()
+			document.querySelector('.header__popup-menu').setAttribute('active','')
+		})
+		document.querySelector('.header__popup-menu').addEventListener('click',(e)=>{
+			e.stopPropagation()
+		})
+		document.querySelector('.header__popup-menu__close-btn').addEventListener('click',()=>{
+			
+			document.querySelector('.header__popup-menu').removeAttribute('active','')
+		})
 // Фича хорошая но пока пусть пустоит в коментариях
-        // const curPage = document.URL;
-        // const links = document.getElementsByTagName('a');
-        // for (let link of links) {
-        // 	if (link.href == curPage) {
-        // 		link.setAttribute("current",'');
-        // 	}
-        // }
-    </script>
+		// const curPage = document.URL;
+		// const links = document.getElementsByTagName('a');
+		// for (let link of links) {
+		// 	if (link.href == curPage) {
+		// 		link.setAttribute("current",'');
+		// 	}
+		// }
+	</script>
+
+   
+       
     <div class="prescreen">
         
         <div class="container">
             <div class="prescrenn__wrapper">
                 <div class="prescreen__content-text">
-                    <h1 class="prescreen__title">Свежее дыхание в корпоративной жизни</h1>
-                    <p class="prescreen__text">Мы усовершенствавали заказ продукции для того, чтобы вы и Ваша компания сконцентрировались на
-                        основных задачах и достигли поставленных целей.
+                    <span class="prescreen__nav-way">Главная / Пошив </span>
+                    <h1 class="prescreen__title">Современный мерч создает современные бренды</h1>
+                    <p class="prescreen__text">Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.
+                        Наша команда всегда погружается в концепт заказа для того, чтобы предложить вам лучшее решение, при этом оптимизировать затраты. 
+                         У нас широкий ассортимент  готовых моделей, так же изготовим любую продукцию по Вашему дизайну. 
+                        
                     </p>
-                    <div class="prescreen__features">
-                        <div class="prescreen__features-item">
-                            <img src="image/features-prescreen.png" alt="" class="prescreen__features-icon">
-                            <span class="prescreen__features-text">Высокое качество ONLY</span>
-                        </div>
-                        <div class="prescreen__features-item">
-                            <img src="image/features-prescreen.png" alt="" class="prescreen__features-icon">
-                            <span class="prescreen__features-text">Поддержка менеджера 24/7</span>
-                        </div>
-                        <div class="prescreen__features-item">
-                            <img src="image/features-prescreen.png" alt="" class="prescreen__features-icon">
-                            <span class="prescreen__features-text">Выполнение заказа 
-                                в turbo-режиме</span>
-                        </div>
+                    <div class="prescreen__block">
+                        <button class="prescreen__button">Оставить заявку</button>
+                        <span class="prescreen__descr">Минимальное кол-во: 25</span>
                     </div>
+                    
+                    
                 </div>
-                <img src="image/fashion-portrait-two-stylish-sexy-hipster-girls-best-friends-wearing-cute-swag-outfits-hats-gray-backround-removebg-preview 1.png" class="prescreen__img"></img>
+                <img src="image/klipartz 1.png" class="prescreen__img"></img>
             </div>
         </div>
     </div>
