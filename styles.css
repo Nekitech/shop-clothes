@@ -3,6 +3,10 @@
 	padding: 0;
 }
 body {
+	background: blue;
+}
+.header__search input {
+	background: transparent !important;
 }
 .fix-img {
 	vertical-align: top;
@@ -510,11 +514,11 @@ text-decoration: none;
 		border: 2px solid transparent;
 		border-radius: 90px	;
 		position: absolute;
-		background: transparent;
 		right: 50px;
 	}
 	.header__search[active]{
 		width: 250px;
+		background: white;
 		border: 2px solid black;
 	}
 	.header__search input {
