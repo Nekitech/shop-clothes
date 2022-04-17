@@ -13,8 +13,10 @@ body {
 	height: 1px;
 	position: relative;
 	display: block;
-	margin-top: 00px;
+    margin-top: -32px;
 	z-index: 0;
+	height: 304px;
+    overflow: hidden;
 }
 .prescreen-bg .wrapper {
 	padding: 0 !important;
@@ -126,7 +128,9 @@ max-width: 200px;
    	right: 39px;
     top: 217px;
 }
-
+.most-popular {
+	position: relative;
+}
 @media (min-width: 1000px) and (max-width: 1600px){
 	.wrapper {
 		padding: 15px;
@@ -149,6 +153,7 @@ max-width: 200px;
 	}
 	.prescreen{
 		padding-top: 100px;
+		height: 800px;
 	}
 	.prescreen__back-image {
 		right: -64px;
@@ -185,7 +190,7 @@ max-width: 200px;
 	}
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.wrapper {
 		padding: 15px;
 	}
@@ -205,7 +210,7 @@ max-width: 200px;
 		color: #272525;
 	}
 	.prescreen-end{
-		margin-top: 445px;
+		margin-top: 343px;
 	}
 	.prescreen p {
 		font-weight: 400;
@@ -227,7 +232,7 @@ max-width: 200px;
 	}
 	.prescreen__preferences{
 		position: absolute;
-		z-index: 0;
+		z-index: 1;
 		align-items: flex-start;
 		flex-direction: column;
 	}
@@ -262,7 +267,7 @@ max-width: 200px;
 		color: #272525;
 	}
 	.prescreen-end{
-		margin-top: 436px;
+		margin-top: 286px;
 	}
 	.prescreen p {
 		font-weight: 400;
@@ -286,7 +291,7 @@ max-width: 200px;
 	.prescreen__preferences{
 	    margin-left: -33px;
 		position: absolute;
-		z-index: 0;
+		z-index: 1;
 		align-items: flex-start;
 		flex-direction: column;
 	}
