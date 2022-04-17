@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body {
 	overflow-x: hidden;
@@ -13,7 +14,16 @@ body {
 	position: relative;
 	display: block;
 	margin-top: 00px;
-	z-index: 10000;
+	z-index: 0;
+}
+.prescreen-bg .wrapper {
+	padding: 0 !important;
+	margin: 0;
+	overflow-x: hidden;
+    height: 1000px;
+	overflow-y: hidden;
+	width: 100vw !important;
+	margin: auto;
 }
 .prescreen-end .prescreen__preferences {
 	position: relative;
@@ -110,8 +120,8 @@ max-width: 200px;
 }
 .prescreen__back-image {
 	position: absolute;
-	right: 0;
-	top: -10%;
+   	right: 39px;
+    top: 217px;
 }
 
 @media (min-width: 1000px) and (max-width: 1600px){
@@ -124,6 +134,11 @@ max-width: 200px;
 	.prescreen__preference{
 		z-index: 100;
 	}
+	.prescreen__back-image {
+		position: absolute;
+	    right: -28px;
+	    top: 395px;
+	}
 }
 @media (min-width: 768px) and (max-width: 1000px){
 	.wrapper {
@@ -133,7 +148,8 @@ max-width: 200px;
 		padding-top: 100px;
 	}
 	.prescreen__back-image {
-		top: -5%;
+		right: -64px;
+	    top: 74px;
 	}
 	.prescreen h1 {
 		font-weight: 900;
@@ -203,8 +219,8 @@ max-width: 200px;
 	}
 	.prescreen__back-image{
 		transform: rotateY(180deg) scale(0.8);
-		right: -366px;
-		top: 200px;
+	    right: -366px;
+	    top: 343px;
 	}
 	.prescreen__preferences{
 		position: absolute;
@@ -260,13 +276,13 @@ max-width: 200px;
 	}
 	.prescreen__back-image{
 		transform: rotateY(180deg) scale(0.8);
-	    right: -451px;
-		top: 200px;
+	    right: -504px;
+	    top: 341px;
 	}
 	.prescreen__preferences{
 	    margin-left: -33px;
 		position: absolute;
-		z-index: 100010;
+		z-index: 0;
 		align-items: flex-start;
 		flex-direction: column;
 	}
