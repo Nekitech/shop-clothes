@@ -7,13 +7,16 @@
     margin: 0;
     padding: 0;
 }
+body {
+    overflow-x: hidden;
+}
 .prescreen {
     width: 100vw;
     height: 100vh;
     background-image: url(../image/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    
 }
 .container {
     max-width: 1600px;
@@ -24,6 +27,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 300px;
+    
 }
 .prescreen__content-text {
     display: flex;
