@@ -231,10 +231,10 @@ max-width: 200px;
 		transform: scale(0.8);
 	}
 	.prescreen h1 {
-		max-width: 463px;
+		max-width: 300px;
 		font-weight: 900;
-		font-size: 36px;
-		line-height: 45px;
+		font-size: 24px;
+		line-height: 30px;
 		letter-spacing: 0.04em;
 		text-transform: uppercase;
 
@@ -243,11 +243,11 @@ max-width: 200px;
 		color: #272525;
 	}
 	.prescreen-end{
-		margin-top: 449px;
+		margin-top: 436px;
 	}
 	.prescreen p {
 		font-weight: 400;
-		width: 460px;
+		width: 250px;
 		font-size: 16px;
 		line-height: 130%;
 		/* or 21px */
