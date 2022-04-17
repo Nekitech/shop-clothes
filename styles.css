@@ -1,1 +1,276 @@
-@import url('./template/header__styles.css')
+@import url('./template/header__styles.css');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+}
+
+.prescreen-end {
+	height: 1px;
+	position: relative;
+	display: block;
+	margin-top: 00px;
+	z-index: 10000;
+}
+.prescreen-end .prescreen__preferences {
+	position: relative;
+	display: flex;
+	width: fit-content;
+	margin: auto;
+	z-index: 1000;
+}
+.prescreen-end > img {
+	position: absolute;
+	width: 100vw;
+}
+.prescreen-end .prescreen__preferences {
+	display: none;
+}
+.wrapper {
+	position: relative;
+	width: 100vw;
+	margin: auto;
+	max-width: 1600px;
+}
+.prescreen-bg{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.prescreen {
+	position: relative;
+	padding-top: 300px;
+	background-size: cover;
+	height: 580px;
+	width: 100vw;
+}	
+
+.prescreen p {
+	margin: 20px 0;
+	width: 620px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 130%;
+	/* or 23px */
+
+	letter-spacing: 0.065em;
+
+	/* main black */
+
+	color: #272525;
+}
+.prescreen h1 {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 60px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	width: 855px;
+
+	/* main black */
+
+	color: #272525;
+}
+.prescreen__preferences {
+	display: flex;
+	align-items: center;
+}
+.prescreen__preference {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.prescreen__preference + .prescreen__preference {
+	margin-left: 11px;
+}
+.prescreen__preference__cirle img{
+	vertical-align: top;
+}
+.prescreen__preference__text{
+	font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+/* main black */
+
+color: #272525;
+max-width: 200px;
+}
+.prescreen__preference__text b {
+	font-weight: 900;
+}
+.prescreen__back-image {
+	position: absolute;
+	right: 0;
+	top: -10%;
+}
+
+@media (min-width: 1000px) and (max-width: 1600px){
+	.wrapper {
+		padding: 15px;
+	}
+	.prescreen__preference + .prescreen__preference{
+		margin-left: 0px;
+	}
+	.prescreen__preference{
+		z-index: 100;
+	}
+}
+@media (min-width: 768px) and (max-width: 1000px){
+	.wrapper {
+		padding: 15px;
+	}
+	.prescreen{
+		padding-top: 100px;
+	}
+	.prescreen__back-image {
+		top: -5%;
+	}
+	.prescreen h1 {
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 40px;
+		width: 600px;
+	}
+	.prescreen p {
+		width: 375px;
+	}
+	.prescreen-end {
+		position: relative;
+		display: block;
+		margin-top: 150px;
+	}
+	.prescreen__preferences {
+		padding-top: 40px;
+		display: none;
+	}
+	.prescreen-end .prescreen__preferences {
+		position: relative;
+		display: flex;
+		width: fit-content;
+		margin: auto;
+		z-index: 1000;
+	}
+	.prescreen-end > img {
+		position: absolute;
+		width: 100vw;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+	.wrapper {
+		padding: 15px;
+	}
+	.prescreen{
+		padding-top: 80px;
+	}
+	.prescreen h1 {
+		max-width: 463px;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 45px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+
+		/* main black */
+
+		color: #272525;
+	}
+	.prescreen-end{
+		margin-top: 445px;
+	}
+	.prescreen p {
+		font-weight: 400;
+		width: 460px;
+		font-size: 16px;
+		line-height: 130%;
+		/* or 21px */
+
+		letter-spacing: 0.065em;
+
+		/* main black */
+
+		color: #272525;
+	}
+	.prescreen__back-image{
+		transform: rotateY(180deg) scale(0.8);
+		right: -366px;
+		top: 200px;
+	}
+	.prescreen__preferences{
+		position: absolute;
+		z-index: 100010;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.prescreen__preference {
+		transform: scale(0.8);
+	}
+	.prescreen__preference + .prescreen__preference {
+		margin: 10px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.wrapper {
+		padding: 15px;
+	}
+	.prescreen{
+		padding-top: 50px;
+	}
+	.prescreen__preference {
+		transform: scale(0.8);
+	}
+	.prescreen h1 {
+		max-width: 463px;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 45px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+
+		/* main black */
+
+		color: #272525;
+	}
+	.prescreen-end{
+		margin-top: 449px;
+	}
+	.prescreen p {
+		font-weight: 400;
+		width: 460px;
+		font-size: 16px;
+		line-height: 130%;
+		/* or 21px */
+
+		letter-spacing: 0.065em;
+
+		/* main black */
+
+		color: #272525;
+	}
+	.prescreen__back-image{
+		transform: rotateY(180deg) scale(0.8);
+	    right: -451px;
+		top: 200px;
+	}
+	.prescreen__preferences{
+	    margin-left: -33px;
+		position: absolute;
+		z-index: 100010;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.prescreen__preference + .prescreen__preference {
+		margin: 10px 0;
+	}
+}

@@ -9,7 +9,7 @@
 				</div>
 				<div class="header__search">
 					<form action="#">
-						<button type="submit">
+						<button class="header__search__btn" type="submit">
 							<img src="./template__images/header__search-btn.svg" alt="">
 						</button>
 						<input type="text" placeholder="Поиск">
@@ -81,6 +81,11 @@
 		document.querySelector('.header__search').addEventListener('click',(e)=>{
 			e.stopPropagation()
 			document.querySelector('.header__search').setAttribute('active','')
+		})
+		document.querySelector('.header__search__btn').addEventListener('click',(e)=>{
+			if (!document.querySelector('.header__search').hasAttribute('active')){
+				e.preventDefault()
+			} 
 		})
 
 		document.querySelector('.header__burger-menu').addEventListener('click',(e)=>{

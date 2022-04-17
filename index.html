@@ -11,19 +11,19 @@
 		<div class="header__top">
 			<div class="header__wrapper">
 				<div class="header__logo">
-					<img src="./images/header__logo.svg" alt="">
+					<img src="./template/template__images/header__logo.svg" alt="">
 				</div>
 				<div class="header__search">
 					<form action="#">
-						<button type="submit">
-							<img src="./images/header__search-btn.svg" alt="">
+						<button class="header__search__btn" type="submit">
+							<img src="./template/template__images/header__search-btn.svg" alt="">
 						</button>
 						<input type="text" placeholder="Поиск">
 					</form>
 				</div>
 				<button class="header__number">+380 630 130 103</button>
 				<div class="header__burger-menu">
-					<img src="./images/header__burger-menu.png" alt="">
+					<img src="./template/template__images/header__burger-menu.png" alt="">
 				</div>
 	 		</div>
 		</div>
@@ -38,13 +38,13 @@
  				</ul>
  				<div class="header__banner">
  					<div class="header__banner__title">ШОПЕРЫ СО СКИДКОЙ -25%</div>
- 					<img class="header__banner__img" src="./images/header__banner.png" alt="">
+ 					<img class="header__banner__img" src="./template/template__images/header__banner.png" alt="">
  				</div>	
  			</div>
  		</div>
  		<div class="header__popup-menu">
  			<div class="header__popup-menu__close-btn-holder">
- 				<img class="header__popup-menu__close-btn" style="vertical-align: top;" src="./images/header__close.svg" alt="">
+ 				<img class="header__popup-menu__close-btn" style="vertical-align: top;" src="./template/template__images/header__close.svg" alt="">
  			</div>
  			<a href="#">Пошив</a>
  			<a href="#">Все товары</a>
@@ -70,10 +70,10 @@
  			<button class="header__number">+380 630 130 103</button>
  			<div class="header__popup-menu__links">
  				<a href="#">
- 					<img class="fix-img" src="./images/header__facebook.png" alt="">
+ 					<img class="fix-img" src="./template/template__images/header__facebook.png" alt="">
  				</a>
  				<a href="#">
- 					<img class="fix-img" src="./images/header__llinkedIn.png" alt="">
+ 					<img class="fix-img" src="./template/template__images/header__llinkedIn.png" alt="">
  					
  				</a>
  			</div>
@@ -88,7 +88,11 @@
 			e.stopPropagation()
 			document.querySelector('.header__search').setAttribute('active','')
 		})
-
+		document.querySelector('.header__search__btn').addEventListener('click',(e)=>{
+			if (!document.querySelector('.header__search').hasAttribute('active')){
+				e.preventDefault()
+			} 
+		})
 		document.querySelector('.header__burger-menu').addEventListener('click',(e)=>{
 			e.stopPropagation()
 			document.querySelector('.header__popup-menu').setAttribute('active','')
@@ -109,5 +113,65 @@
 		// 	}
 		// }
 	</script>
+	<section class="prescreen">
+		<div class="prescreen-bg">
+			<img class="prescreen-bg" src="./images/bg color.png" alt="">
+		</div>
+		<div class="wrapper">
+			<img class="prescreen__back-image" src="./images/prescreen.png" alt="">
+			<h1>Свежее дыхание в корпоративной жизни</h1>
+			<p>Мы усовершенствовали процесс заказа продукции для того, чтобы Вы и Ваша компания сосредоточились на основных задачах и достигали поставленных целей.</p>
+			<div class="prescreen__preferences">
+				<div class="prescreen__preference">
+					<div class="prescreen__preference__cirle">
+						<img src="./images/circle.png" alt="">
+					</div>
+					<div class="prescreen__preference__text">Высокое качество <b>ONLY</b></div>
+				</div>
+				<div class="prescreen__preference">
+					<div class="prescreen__preference__cirle">
+						<img src="./images/circle.png" alt="">
+					</div>
+					<div class="prescreen__preference__text">Поддержка менеджера <b>24/7</b></div>
+				</div>
+				<div class="prescreen__preference">
+					<div class="prescreen__preference__cirle">
+						<img src="./images/circle.png" alt="">
+					</div>
+					<div class="prescreen__preference__text">Выполнение заказа в <b> turbo-режиме</b> 
+</div>
+				</div>
+				<div class="prescreen__preference"></div>
+
+			</div>
+		</div>
+		&nbsp;
+		<div class="prescreen-end">
+			<img src="./images/Rectangle 85.png" alt="">
+			<div class="prescreen__preferences">
+				<div class="prescreen__preference">
+					<div class="prescreen__preference__cirle">
+						<img src="./images/circle.png" alt="">
+					</div>
+					<div class="prescreen__preference__text">Высокое качество <b>ONLY</b></div>
+				</div>
+				<div class="prescreen__preference">
+					<div class="prescreen__preference__cirle">
+						<img src="./images/circle.png" alt="">
+					</div>
+					<div class="prescreen__preference__text">Поддержка менеджера <b>24/7</b></div>
+				</div>
+				<div class="prescreen__preference">
+					<div class="prescreen__preference__cirle">
+						<img src="./images/circle.png" alt="">
+					</div>
+					<div class="prescreen__preference__text">Выполнение заказа в <b> turbo-режиме</b> 
+</div>
+				</div>
+				<div class="prescreen__preference"></div>
+
+			</div>
+		</div>
+	</section>
 </body>
 </html>
