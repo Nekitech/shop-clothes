@@ -14,11 +14,11 @@
 					<img src="./template/template__images/header__logo.svg" alt="">
 				</div>
 				<div class="header__search">
-					<form action="#">
+					<form>
 						<button class="header__search__btn" type="submit">
 							<img src="./template/template__images/header__search-btn.svg" alt="">
 						</button>
-						<input type="text" placeholder="Поиск">
+						<input class="header__search__input" type="text" placeholder="Поиск">
 					</form>
 				</div>
 				<button class="header__number">+380 630 130 103</button>
@@ -91,7 +91,11 @@
 		document.querySelector('.header__search__btn').addEventListener('click',(e)=>{
 			if (!document.querySelector('.header__search').hasAttribute('active')){
 				e.preventDefault()
-			} 
+			} else {
+				e.preventDefault()
+				document.location.href = "https://yandex.ru/search/?text=" + document.querySelector('.header__search__input').value;
+				return false;
+			}
 		})
 		document.querySelector('.header__burger-menu').addEventListener('click',(e)=>{
 			e.stopPropagation()
