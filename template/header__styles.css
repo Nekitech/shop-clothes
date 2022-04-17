@@ -221,6 +221,7 @@ text-decoration: none;
 }
 .header__bottom ul {
 	display: flex;
+	z-index: 1;
 }
 @media (min-width:1600px){
 	.header__top {
