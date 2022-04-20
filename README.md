@@ -13,4 +13,5 @@
 Сайт сверстан по [макету из figma](https://www.figma.com/file/TP61XQW1CzoNjWqrWsspkX/Untitled)
 ## авторы верстки
 __Шульгин Григорий Н. ПИ 1 курс(bold)__
+
 __Беляев Никита А. ПИ 1 курс(bold)__
