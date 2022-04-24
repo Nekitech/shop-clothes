@@ -468,7 +468,7 @@ max-width: 200px;
 		margin-top: 0;
 	}
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
 	.most-popular__title{
 		font-style: normal;
 		font-weight: 700;
