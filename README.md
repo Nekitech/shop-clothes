@@ -11,7 +11,7 @@
 :black_square_button: страница пошив
 
 Сайт сверстан по [макету из figma](https://www.figma.com/file/TP61XQW1CzoNjWqrWsspkX/Untitled)
-## авторы верстки
+# авторы верстки
 __Шульгин Григорий Н. ПИ 1 курс__
 
 __Беляев Никита А. ПИ 1 курс__
