@@ -13,7 +13,7 @@ body {
 	height: 1px;
 	position: relative;
 	display: block;
-	margin-top: -34px;
+    margin-top: -23px;
 	z-index: 0;
 	height: 304px;
     overflow: hidden;
@@ -132,6 +132,9 @@ max-width: 200px;
 	position: relative;
 }
 @media (min-width: 1000px) and (max-width: 1600px){
+	.prescreen-end {
+		margin-top: -36px;
+	}
 	.wrapper {
 		padding: 15px;
 	}
