@@ -432,7 +432,7 @@ max-width: 200px;
 .most-popular__bg-end {
 	width: 100%;
 	position: absolute;
-	bottom: -15%;
+	bottom: -20%;
 	z-index: -1;
 }
 @media (min-width: 1000px) and (max-width: 1600px) {
@@ -446,6 +446,9 @@ max-width: 200px;
 	}
 }
 @media (min-width: 480px) and (max-width: 768px) {
+	.most-popular__bg-end {
+		bottom: -5%;
+	}
 	.most-popular__container {
 		grid-auto-columns: 1fr; 
 		grid-template-areas: 
@@ -482,6 +485,9 @@ max-width: 200px;
 	}
 }
 @media (max-width: 480px) {
+	.most-popular__bg-end {
+		bottom: -2%;
+	}
 	.most-popular__title{
 		font-style: normal;
 		font-weight: 700;
@@ -564,4 +570,20 @@ max-width: 200px;
 	100% {
 		transform: rotateZ(0);
 	}
+}
+
+/*end of most-popular styles*/
+
+/*start of creative styles*/
+
+.creative {
+	margin-top: 120px;
+	position: relative;
+}
+.creative__title {
+	margin-top: 250px;
+}
+.creative-bg img {
+	position: absolute;
+	width: 100%;
 }
