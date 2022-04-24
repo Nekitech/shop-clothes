@@ -419,7 +419,7 @@ max-width: 200px;
 .most-popular__bg-end {
 	width: 100%;
 	position: absolute;
-	bottom: -80%;
+	bottom: -15%;
 	z-index: -1;
 }
 @media (min-width: 1000px) and (max-width: 1600px) {
