@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./styles.css">
+	<staticContent><mimeMap fileExtension=".svg" mimeType="image/svg+xml" /></staticContent>
 	<title>Document</title>
 </head>
 <body>
@@ -109,13 +110,13 @@
 			document.querySelector('.header__popup-menu').removeAttribute('active','')
 		})
 // Фича хорошая но пока пусть пустоит в коментариях
-		// const curPage = document.URL;
-		// const links = document.getElementsByTagName('a');
-		// for (let link of links) {
-		// 	if (link.href == curPage) {
-		// 		link.setAttribute("current",'');
-		// 	}
-		// }
+		const curPage = document.URL;
+		const links = document.getElementsByTagName('a');
+		for (let link of links) {
+			if (link.href == curPage) {
+				link.setAttribute("current",'');
+			}
+		}
 	</script>
 	<section class="prescreen">
 		<div class="prescreen-bg">
@@ -221,9 +222,24 @@
 			<img src="images/Rectangle 88.png" alt="">
 		</div>
 		<div class="wrapper">
+			<div class="creative-img">
+				<img src="./images/creative (2).png" alt="">
+			</div>
 			<div class="creative__title">
 				<img src="./images/creative.png" alt="">
 			</div>
+			<div class="creative__title-text">
+				Хотите удивить ваших коллег/партнеров необычными подарками?
+			</div>
+			<div class="creative__sub-tittle">
+				Выбирайте готовые подарочные наборы или укажите критерии по которым мы соберем для Вас уникальный бокс.
+			</div>
+			<a href="#" class="creative__go-to-kits">
+				Перейти к наборам
+			</a>
+			<a href="#" class="creative__create-own-kit">
+				Перейти к наборам
+			</a>
 		</div>
 	</section>
 </body>

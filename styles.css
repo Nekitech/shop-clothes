@@ -582,8 +582,138 @@ max-width: 200px;
 }
 .creative__title {
 	margin-top: 250px;
+	margin-left: 250px;
+}
+.creative-bg {
+    width: 100vw;
+	height: 100%;
+	position: absolute;
 }
 .creative-bg img {
-	position: absolute;
+	height: 100%;
 	width: 100%;
+}
+.creative__title-text {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 58px;
+
+	/* main black */
+
+	color: #272525;
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 23px 0px;
+	max-width: 960px;
+}
+.creative__sub-tittle{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.065em;
+
+	/* gray */
+
+	color: #454747;
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 23px 0px;
+	max-width:600px;
+}
+.creative__go-to-kits{
+	margin-top: 50px;
+	display: inline-block;
+	height: 60px;
+	text-decoration: none;
+	width: 280px;
+	background: #272525;
+	border-radius: 60px;
+	text-align: center;
+	line-height: 60px;
+
+	color: #FAFAFA;
+	font-size: 16px;
+	margin-bottom: 100px;
+}
+.creative__create-own-kit{
+	margin-top: 50px;
+	margin-left: 20px;
+	display: inline-block;
+	height: 60px;
+	width: 280px;
+	background: #EEF1F6;
+	border-radius: 60px;
+	text-align: center;
+	line-height: 60px;
+
+	color: #272525;
+	font-size: 16px;
+	text-decoration: none;
+}
+.creative-img {
+	position: absolute;
+	right: 0;
+	top: -50px;
+}
+@media (min-width: 1000px) and (max-width: 1600px) {
+	.creative-img {
+	    top: 135px;
+	    right: -204px;
+	}
+	.creative__title-text {
+		width: 600px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1000px){
+	.creative-img {
+	    top: 135px;
+	    right: -204px;
+	    transform: scale(0.7);
+	}
+	.creative__title{
+		margin-left: 130px;
+	}
+	.creative__title-text {
+		width: 500px;
+	}
+	.creative__sub-tittle {
+		width: 500px;
+	}
+}
+@media (max-width: 768px) {
+	.creative-img {
+		display: none;
+	}
+	.creative__title{
+		margin-left: 50px;
+		margin-top: 150px;
+	}
+	.creative__title-text {
+		text-align: center;
+	}
+	.creative__sub-tittle {
+		text-align: center;
+	}
+	.creative__go-to-kits {
+		display:block;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.creative__create-own-kit {
+		display:block;
+		margin: auto;
+		margin-top: 10px;
+
+	}
 }
