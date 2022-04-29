@@ -124,6 +124,22 @@
                          У нас широкий ассортимент  готовых моделей, так же изготовим любую продукцию по Вашему дизайну. 
                         
                     </p>
+					<script>
+						function checkWindowWidth(){
+							if(window.innerWidth < 768){
+								document.querySelector('.prescreen__text').innerHTML = 'Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.'
+							}
+							else {
+								document.querySelector('.prescreen__text').innerHTML = `Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.
+								Наша команда всегда погружается в концепт заказа для того, чтобы предложить вам лучшее решение, при этом оптимизировать затраты. 
+                         		У нас широкий ассортимент  готовых моделей, так же изготовим любую продукцию по Вашему дизайну. `
+							}
+						}
+						checkWindowWidth()
+						window.addEventListener('resize', function(){
+							checkWindowWidth()
+						})
+					</script>
                     <div class="prescreen__block">
                         <button class="prescreen__button">Оставить заявку</button>
                         <span class="prescreen__descr">Минимальное кол-во: 25</span>
