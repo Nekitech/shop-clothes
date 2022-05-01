@@ -4,11 +4,11 @@
 
 :white_check_mark: шапка
 
-:black_square_button: футер
+:white_check_mark: футер
 
-:black_square_button: главная страница
+:white_check_mark: главная страница
 
-:black_square_button: страница пошив
+:white_check_mark: страница пошив
 
 Сайт сверстан по [макету из figma](https://www.figma.com/file/TP61XQW1CzoNjWqrWsspkX/Untitled)
 # авторы верстки
