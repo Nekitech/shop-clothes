@@ -48,6 +48,7 @@ function slider({
 
 	function updateStatus(n){
 		curPage+=n;
+		if (!!statusQueryStr)
 		document.querySelector(statusQueryStr).innerHTML = curPage + '/' + Math.ceil(items.length/itemsToView);
 	}
 
