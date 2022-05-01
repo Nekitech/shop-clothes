@@ -1,11 +1,10 @@
 function slider({
 	itemsToView = 4,
-	statusQueryStr,
+	statusQueryStr, // позиция страницы
 	setTransition = '0.6s',
-	bodyQueryStr,
-	leftQueryStr,
+	bodyQueryStr, // тело в котором будет карусель
+	leftQueryStr, // кнопки
 	rightQueryStr,
-	typeOfStatus = 'small'
 }){	
 	let items = document.querySelector(bodyQueryStr).querySelectorAll('div');
 	let bodyWidth = document.querySelector(bodyQueryStr).getBoundingClientRect().width;
