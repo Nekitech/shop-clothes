@@ -93,17 +93,17 @@ color: #222227;
 .template__ideas__lamp {
 	position: absolute;
 	right: 150px;
-	top: -150px;
+	top: 33px;
 }
 .template__ideas__rocket-2 {
 	position: absolute;
 	right: 0px;
-	top: -50px;
+	top: 60px;
 }
 .template__ideas__rocket-1 {
 	position: absolute;
 	right: 600px;
-	top: 50px;
+	top: 165px;
 }
 .right2323 {
 	width: 100%;
