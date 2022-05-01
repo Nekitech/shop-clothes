@@ -10,10 +10,10 @@ function boot() {
 	})
 
 	slider({
-			itemsToView: document.body.clientWidth > 1000 ? 4 : window.bodyWidth > 600? 3 : window.bodyWidth > 400 ? 2 : 1,
-			bodyQueryStr: '.cooperations__slider__content',
-			leftQueryStr: '.cooperations__slider__left-btn',
-			rightQueryStr: '.cooperations__slider__right-btn',
+		itemsToView: document.body.clientWidth > 1000 ? 4 : document.body.clientWidth > 600? 3 : document.body.clientWidth > 400 ? 2 : 1,
+		bodyQueryStr: '.cooperations__slider__content',
+		leftQueryStr: '.cooperations__slider__left-btn',
+		rightQueryStr: '.cooperations__slider__right-btn',
 	})
 
 }

@@ -7,8 +7,8 @@ function slider({
 	rightQueryStr,
 	typeOfStatus = 'small'
 }){	
-	items = document.querySelector(bodyQueryStr).querySelectorAll('div');
-	bodyWidth = document.querySelector(bodyQueryStr).getBoundingClientRect().width;
+	let items = document.querySelector(bodyQueryStr).querySelectorAll('div');
+	let bodyWidth = document.querySelector(bodyQueryStr).getBoundingClientRect().width;
 	let id = 0;
 	let canScroll = true;
 	let curPage = 1;
