@@ -677,7 +677,7 @@ max-width: 200px;
 .creative-img {
 	position: absolute;
 	right: 0;
-	top: -50px;
+	top: 68px;
 }
 @media (min-width: 1000px) and (max-width: 1600px) {
 	.creative-img {
